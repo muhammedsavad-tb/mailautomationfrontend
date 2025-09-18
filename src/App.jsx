@@ -6,7 +6,7 @@ function App(){
 
   //fetch vendors from spring boot backend
   useEffect(() => {
-    fetch("http://134.209.155.202/api/vendors")
+    fetch("https://muhammedsavad-tb-mailautomation-backend.buv7hx.easypanel.host/api/vendors")
     .then((res) => res.json())
     .then((data) => setVendors(data))
     .catch((err) => console.error("Error fetching vendors", err));
